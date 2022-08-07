@@ -3,7 +3,7 @@ const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
 
-// GET - Finds all categories and all of their associated products
+// GET request that finds all categories and all of their associated products
 router.get("/", async (req, res) => {
 	try {
 		const categoryData = await Category.findAll({
@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
 	}
 });
 
-// GET - Finds one category by its `id` value and their associated products
+// GET request that finds one category by its `id` value along with their associated products
 router.get("/:id", async (req, res) => {
 	try {
 		const categoryData = await Category.findByPk(req.params.id, {
@@ -33,7 +33,7 @@ router.get("/:id", async (req, res) => {
 	}
 });
 
-// POST - Creates new category
+// POST request that creates a new category
 router.post("/", async (req, res) => {
 	try {
 		const categoryData = await Category.create(req.body);
@@ -68,7 +68,7 @@ router.put("/:id", async (req, res) => {
 	}
 });
 
-// DELETE = Deletes a category by its `id` value
+// DELETE request that deletes a category by its `id` value
 router.delete("/:id", async (req, res) => {
 	try {
 		const categoryData = await Category.destroy({
