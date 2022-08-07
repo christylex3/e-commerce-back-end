@@ -43,8 +43,8 @@ router.post("/", async (req, res) => {
 	}
 });
 
+// PUT request that updates a tag's name by its `id` value
 router.put("/:id", (req, res) => {
-	// update a tag's name by its `id` value
 	try {
 		Tag.update(
 			{
@@ -52,14 +52,14 @@ router.put("/:id", (req, res) => {
 				tag_name: req.body.tag_name,
 			},
 			{
-				// Gets the category based on its id given in the request parameters
+				// Gets the tag based on its id given in the request parameters
 				where: {
 					id: req.params.id,
 				},
 			}
 		)
 		.then((updatedTag) => {
-			// Sends the updated category as a json response
+			// Sends the updated tag as a json response
 			res.json(updatedTag);
 		})
 		.catch((err) => res.json(err));
