@@ -49,7 +49,7 @@ router.put("/:id", async (req, res) => {
 		Category.update(
 			{
 				// All the fields you can update and the data attached to the request body.
-				name: req.body.name,
+				category_name: req.body.category_name,
 			},
 			{
 				// Gets the category based on its id given in the request parameters
