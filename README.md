@@ -8,6 +8,7 @@ This application works as the backend of a internet retail or e-commerce.
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Video](#video)
 * [Contribution](#contribution)
 * [Questions](#questions)
 
@@ -27,9 +28,7 @@ To set up for the app:
 2. Open up terminal to navigate to `db`.
 3. Then, enter mysql to run `SOURCE schema.sql` and then quit.
 4. Navigate back to root and do `npm run seed`.
-5. Then launch the app with `node server.js`.
-
-You can test the backend functionality with Insomnia. Here are the requests:
+5. Then launch the app with `node server.js` and make backend requests
 
 ### Category Requests
 * `GET` /api/categories - returns all categories and their associated Product data
@@ -52,7 +51,8 @@ You can test the backend functionality with Insomnia. Here are the requests:
 * `PUT` /api/tags/:id - updates the tag's name with that id
 * `DELETE` /api/tags/:id - deletes the tag with that id
 
-> Note: A [video is provided for guidance]()  to demonstrate the app's functionality. 
+## Video
+ [A video is provided](https://drive.google.com/file/d/1DYCoWUp1LGhC6Rn_J-vPpzYKpZXvuZ7Y/view) to demonstrate the functionality of the e-commerce backend.
 
 ## Contribution
 
