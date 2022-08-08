@@ -52,7 +52,7 @@ You can test the backend functionality with Insomnia. Here are the requests:
 * `PUT` /api/tags/:id - updates the tag's name with that id
 * `DELETE` /api/tags/:id - deletes the tag with that id
 
-> Note: A [video is provided for guidance](https://drive.google.com/file/d/1qDWGonRT0-pv_P6QQQlXklpYiRqWwkGu/view)  to demonstrate the app's functionality. 
+> Note: A [video is provided for guidance]()  to demonstrate the app's functionality. 
 
 ## Contribution
 
